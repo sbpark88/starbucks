@@ -83,9 +83,10 @@
 
 스타벅스 웹 페이지 퍼블리싱
 
-학습 목표:
-- `div`, `span` 남발을 그만두고 `HTML Semantic Elements`에 맞게 작성해보자.
-- 부족한 CSS 스타일 실력 키우기.
+목표:
+- 복잡한 HTML 페이지 구조 잡기.
+- HTML Semantic Elements 신경 쓰기.
+- 다양한 CSS 효과 적용.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,31 +109,32 @@
 
 ### Prerequisites
 
-No prerequisites
-<!--
 - npm
 ```shell
 npm install npm@latest -g
 ```
--->
+
+or
+
+```shell
+brew install npm
+```
+
 ### Installation
 
-Just open the `oo.html` file.
-<!--
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```shell
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/sbpark88/starbucks.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```shell
    npm install
    ```
-4. Enter your API in `config.js`
-   ```javascript
-   const API_KEY = 'ENTER YOUR API';
+3. Run the script
+   ```shell
+   npm run
    ```
--->
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
