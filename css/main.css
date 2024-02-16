@@ -15,26 +15,9 @@ input {
   outline: none;
 }
 
-body {
-  /* HEADER */
-}
 body header {
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
-}
-body header .inner {
-  width: 1100px;
-  height: 120px;
-  margin: 0 auto;
-  position: relative;
-}
-body header .inner .logo {
-  position: absolute;
-  height: 75px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto 0;
 }
 body header .inner .sub-menu {
   position: absolute;
@@ -99,6 +82,28 @@ body header .inner .sub-menu .search .material-icons {
 }
 body header .inner .sub-menu .search.focused .material-icons {
   opacity: 0;
+}
+
+body {
+  /* HEADER */
+}
+body header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
+body header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+body header .inner .logo {
+  position: absolute;
+  height: 75px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 
 /*# sourceMappingURL=main.css.map */
