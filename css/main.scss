@@ -19,6 +19,46 @@ body {
         left: 0;
         bottom: 0;
         margin: auto 0;
+        display: none;
+      }
+
+      .sub-menu {
+        ul.menu {
+          font-family: Arial, sans-serif;
+          display: flex;
+
+          li {
+            position: relative;
+
+            a {
+              font-size: 12px;
+              padding: 11px 16px;
+              display: block;
+              color: #656565;
+
+              &:hover {
+                color: #000;
+              }
+            }
+
+            &:not(:first-child)::before {
+              content: "";
+              width: 1px;
+              height: 12px;
+              background-color: #e5e5e5;
+              position: absolute; /* display: block */
+              top: 0;
+              bottom: 0;
+              margin: auto 0;
+            }
+          }
+        }
+        .search {
+          input {
+          }
+          .material-icons {
+          }
+        }
       }
     }
   }
