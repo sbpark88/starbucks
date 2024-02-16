@@ -1,0 +1,21 @@
+@import "subMenu";
+@import "mainMenu";
+
+body header {
+  /* HEADER */
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+
+  > .inner {
+    height: 120px;
+
+    .logo {
+      position: absolute;
+      height: 75px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+}
