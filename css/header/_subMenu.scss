@@ -1,82 +1,73 @@
-body {
-  header {
-    background-color: #f6f5f0;
-    border-bottom: 1px solid #c8c8c8;
+body header .inner .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
 
-    .inner {
-      .sub-menu {
-        position: absolute;
-        top: 10px;
-        right: 0;
-        display: flex;
+  ul.menu {
+    font-family: Arial, sans-serif;
+    display: flex;
 
-        ul.menu {
-          font-family: Arial, sans-serif;
-          display: flex;
+    li {
+      position: relative;
 
-          li {
-            position: relative;
+      a {
+        font-size: 12px;
+        padding: 11px 16px;
+        display: block;
+        color: #656565;
 
-            a {
-              font-size: 12px;
-              padding: 11px 16px;
-              display: block;
-              color: #656565;
-
-              &:hover {
-                color: #000;
-              }
-            }
-
-            &:not(:first-child)::before {
-              content: "";
-              width: 1px;
-              height: 12px;
-              background-color: #e5e5e5;
-              position: absolute; /* display: block */
-              top: 0;
-              bottom: 0;
-              margin: auto 0;
-            }
-          }
-        }
-        .search {
-          height: 34px;
-          position: relative;
-
-          input {
-            width: 36px;
-            height: 34px;
-            padding: 4px 10px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 5px;
-            background-color: #fff;
-            color: #777;
-            font-size: 12px;
-            transition: width 0.4s;
-
-            &:focus {
-              width: 190px;
-              border-color: #669900;
-            }
-          }
-
-          .material-icons {
-            height: 24px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 5px;
-            margin: auto 0;
-            transition: 0.4s;
-          }
-
-          &.focused .material-icons {
-            opacity: 0;
-          }
+        &:hover {
+          color: #000;
         }
       }
+
+      &:not(:first-child)::before {
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: #e5e5e5;
+        position: absolute; /* display: block */
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+      }
+    }
+  }
+  .search {
+    height: 34px;
+    position: relative;
+
+    input {
+      width: 36px;
+      height: 34px;
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #777;
+      font-size: 12px;
+      transition: width 0.4s;
+
+      &:focus {
+        width: 190px;
+        border-color: #669900;
+      }
+    }
+
+    .material-icons {
+      height: 24px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 5px;
+      margin: auto 0;
+      transition: 0.4s;
+    }
+
+    &.focused .material-icons {
+      opacity: 0;
     }
   }
 }
