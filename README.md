@@ -94,10 +94,10 @@
 
 ### Built With
 
-해당 프로젝트에 사용된 기술입니다.
+해당 프로젝트에 사용된 기술입니다(단, 별도의 github action 설정을 생략하기 위해 scss 를 css 트랜스파일 시켜 함께 커밋함).
 
 ![HTML5][HTML5 Icon]
-![CSS3][CSS3 Icon]
+![SCSS][SCSS Icon]
 ![JavaScript][JavaScript Icon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
