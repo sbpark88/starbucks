@@ -1,10 +1,14 @@
 @import "subMenu";
 @import "mainMenu";
+@import "badges";
 
 body header {
   /* HEADER */
+  width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top: 0;
 
   > .inner {
     height: 120px;

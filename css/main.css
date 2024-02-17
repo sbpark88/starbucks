@@ -1,6 +1,7 @@
 body {
   color: #333;
   font: 400 normal 16px/1.4 "Nanum Gothic", sans-serif;
+  height: 3000px;
 }
 
 img {
@@ -149,10 +150,26 @@ body header .inner .main-menu .item:hover .item__contents {
   display: block;
 }
 
+body header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+body header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 body header {
   /* HEADER */
+  width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top: 0;
 }
 body header > .inner {
   height: 120px;
