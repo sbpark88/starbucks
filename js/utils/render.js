@@ -3,7 +3,7 @@
 /**
  * DOM Selector
  * @param selector {string} - CSS selector
- * @returns {NodeList | HTMLElement}
+ * @returns {NodeListOf<Element> | Element}
  */
 const $ = (selector) => {
   const nodeList = document.querySelectorAll(selector);

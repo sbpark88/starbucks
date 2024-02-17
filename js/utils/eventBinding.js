@@ -2,9 +2,9 @@
 
 /**
  * Event binding function
- * @param $el
- * @param eventType
- * @param listener
+ * @param $el {Window | Element}
+ * @param eventType {String}
+ * @param listener {Function}
  * @returns {*}
  */
 export const eventBind = ({ $el, eventType = "click", listener }) =>
