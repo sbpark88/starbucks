@@ -1,5 +1,5 @@
 @import "base";
-@import "./header/header";
 
-body {
-}
+/* SCSS Section Modules */
+@import "header/index";
+@import "visual/index";

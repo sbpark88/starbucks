@@ -1,0 +1,56 @@
+@import "../variables";
+
+body .visual {
+  margin-top: $header-inner-height;
+  background-image: url("../../images/visual_bg.jpg");
+  background-position: center;
+
+  .inner {
+    height: 646px; // image height
+
+    .title {
+      position: absolute;
+      top: 88px;
+      left: -10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .btn {
+      }
+    }
+
+    .cup1 {
+      position: absolute;
+
+      &.image {
+        bottom: 0;
+        right: -47px;
+      }
+      &.text {
+        top: 38px;
+        right: 171px;
+      }
+    }
+
+    .cup2 {
+      position: absolute;
+
+      &.image {
+        bottom: 0;
+        right: 162px;
+      }
+      &.text {
+        top: 321px;
+        right: 416px;
+      }
+    }
+
+    .spoon {
+      position: absolute;
+      bottom: 0;
+      left: 275px;
+    }
+  }
+}

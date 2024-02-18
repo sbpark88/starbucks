@@ -1,3 +1,5 @@
+@import "../variables";
+
 @import "subMenu";
 @import "mainMenu";
 @import "badges";
@@ -9,9 +11,10 @@ body header {
   border-bottom: 1px solid #c8c8c8;
   position: fixed;
   top: 0;
+  z-index: 9;
 
   > .inner {
-    height: 120px;
+    height: $header-inner-height;
 
     .logo {
       position: absolute;

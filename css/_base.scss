@@ -1,5 +1,7 @@
+$default-gray: #333;
+
 body {
-  color: #333;
+  color: $default-gray;
   font:
     400 normal 16px/1.4 "Nanum Gothic",
     sans-serif;
@@ -22,4 +24,66 @@ input {
   width: 1100px;
   margin: 0 auto;
   position: relative;
+}
+
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid $default-gray;
+  border-radius: 4px;
+  color: $default-gray;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $default-gray;
+    color: #fff;
+  }
+
+  &.btn--reverse {
+    background-color: $default-gray;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: $default-gray;
+    }
+  }
+
+  &.btn--brown {
+    $brown: #592b18;
+    border-color: $brown;
+    color: $brown;
+
+    &:hover {
+      background-color: $brown;
+      color: #fff;
+    }
+  }
+
+  &.btn--gold {
+    $gold: #d9aa8a;
+    border-color: $gold;
+    color: $gold;
+
+    &:hover {
+      background-color: $gold;
+      color: #fff;
+    }
+  }
+
+  &.btn--white {
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $default-gray;
+    }
+  }
 }
