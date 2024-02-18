@@ -1,6 +1,8 @@
+@charset "UTF-8";
 body {
   color: #333;
   font: 400 normal 16px/1.4 "Nanum Gothic", sans-serif;
+  height: 3000px;
 }
 
 img {
@@ -21,6 +23,58 @@ input {
   position: relative;
 }
 
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #333;
+}
+.btn.btn--brown {
+  border-color: #592b18;
+  color: #592b18;
+}
+.btn.btn--brown:hover {
+  background-color: #592b18;
+  color: #fff;
+}
+.btn.btn--gold {
+  border-color: #d9aa8a;
+  color: #d9aa8a;
+}
+.btn.btn--gold:hover {
+  background-color: #d9aa8a;
+  color: #fff;
+}
+.btn.btn--white {
+  border-color: #fff;
+  color: #fff;
+}
+.btn.btn--white:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* SCSS Section Modules */
 body header .inner .sub-menu {
   position: absolute;
   top: 10px;
@@ -149,10 +203,27 @@ body header .inner .main-menu .item:hover .item__contents {
   display: block;
 }
 
+body header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+body header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 body header {
   /* HEADER */
+  width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 body header > .inner {
   height: 120px;
@@ -164,6 +235,130 @@ body header > .inner .logo {
   left: 0;
   bottom: 0;
   margin: auto 0;
+}
+
+body .visual {
+  margin-top: 120px;
+  background-image: url("../../images/visual_bg.jpg");
+  background-position: center;
+}
+body .visual .inner {
+  height: 646px;
+}
+body .visual .inner .title {
+  position: absolute;
+  top: 88px;
+  left: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+body .visual .inner .cup1 {
+  position: absolute;
+}
+body .visual .inner .cup1.image {
+  bottom: 0;
+  right: -47px;
+}
+body .visual .inner .cup1.text {
+  top: 38px;
+  right: 171px;
+}
+body .visual .inner .cup2 {
+  position: absolute;
+}
+body .visual .inner .cup2.image {
+  bottom: 0;
+  right: 162px;
+}
+body .visual .inner .cup2.text {
+  top: 321px;
+  right: 416px;
+}
+body .visual .inner .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 275px;
+}
+body .visual .fade-in {
+  opacity: 0;
+}
+
+body .notice .notice-line {
+  position: relative;
+}
+body .notice .notice-line .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+}
+body .notice .notice-line .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5efe;
+}
+body .notice .notice-line .inner {
+  height: 62px; /* notice-line 에 높이를 주지 않고 inner 의 높이 하나만으로 컨테이너 높이를 제어하는 방법 */
+  display: flex;
+}
+body .notice .notice-line .inner .inner__left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+body .notice .notice-line .inner .inner__left h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+body .notice .notice-line .inner .inner__left .swiper {
+  height: 100%;
+  flex-grow: 1;
+}
+body .notice .notice-line .inner .inner__left .swiper .swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body .notice .notice-line .inner .inner__left .swiper .swiper-slide a {
+  color: #fff;
+}
+body .notice .notice-line .inner .inner__left .notice-line__more {
+  width: 62px;
+  display: flex;
+  justify-content: center;
+}
+body .notice .notice-line .inner .inner__left .notice-line__more .material-icons {
+  color: #fff;
+  font-size: 30px;
+}
+body .notice .notice-line .inner .inner__right {
+  width: 40%;
+  height: 100%;
+  background-color: #f6f5efe;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .notice .notice-line .inner .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+body .notice .notice-line .inner .inner__right .toggle-promotion {
+  width: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,7 +3,7 @@
 import { $, render } from "../../utils/render.js";
 import { eventBind } from "../../utils/eventBinding.js";
 
-const container = $(".sub-menu");
+const container = $("header .sub-menu");
 const template = `
 <ul class="menu">
   <li>
