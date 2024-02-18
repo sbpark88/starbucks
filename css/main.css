@@ -75,7 +75,6 @@ input {
 }
 
 /* SCSS Section Modules */
-/* Global Variables */
 body header .inner .sub-menu {
   position: absolute;
   top: 10px;
@@ -238,7 +237,6 @@ body header > .inner .logo {
   margin: auto 0;
 }
 
-/* Global Variables */
 body .visual {
   margin-top: 120px;
   background-image: url("../../images/visual_bg.jpg");
@@ -287,7 +285,6 @@ body .visual .fade-in {
   opacity: 0;
 }
 
-/* Global Variables */
 body .notice .notice-line {
   position: relative;
 }
@@ -324,10 +321,17 @@ body .notice .notice-line .inner .inner__left h2 {
   font-weight: 700;
   margin-right: 20px;
 }
-body .notice .notice-line .inner .inner__left .swiper-container {
+body .notice .notice-line .inner .inner__left .swiper {
   height: 100%;
-  background-color: orange;
   flex-grow: 1;
+}
+body .notice .notice-line .inner .inner__left .swiper .swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body .notice .notice-line .inner .inner__left .swiper .swiper-slide a {
+  color: #fff;
 }
 body .notice .notice-line .inner .inner__left .notice-line__more {
   width: 62px;
