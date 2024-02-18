@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: #333;
   font: 400 normal 16px/1.4 "Nanum Gothic", sans-serif;
@@ -284,6 +285,76 @@ body .visual .inner .spoon {
 }
 body .visual .fade-in {
   opacity: 0;
+}
+
+/* Global Variables */
+body .notice .notice-line {
+  position: relative;
+}
+body .notice .notice-line .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+}
+body .notice .notice-line .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5efe;
+}
+body .notice .notice-line .inner {
+  height: 62px; /* notice-line 에 높이를 주지 않고 inner 의 높이 하나만으로 컨테이너 높이를 제어하는 방법 */
+  display: flex;
+}
+body .notice .notice-line .inner .inner__left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+body .notice .notice-line .inner .inner__left h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+body .notice .notice-line .inner .inner__left .swiper-container {
+  height: 100%;
+  background-color: orange;
+  flex-grow: 1;
+}
+body .notice .notice-line .inner .inner__left .notice-line__more {
+  width: 62px;
+  display: flex;
+  justify-content: center;
+}
+body .notice .notice-line .inner .inner__left .notice-line__more .material-icons {
+  color: #fff;
+  font-size: 30px;
+}
+body .notice .notice-line .inner .inner__right {
+  width: 40%;
+  height: 100%;
+  background-color: #f6f5efe;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .notice .notice-line .inner .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+body .notice .notice-line .inner .inner__right .toggle-promotion {
+  width: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

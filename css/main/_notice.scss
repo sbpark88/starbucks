@@ -1,0 +1,91 @@
+@import "../variables";
+
+body .notice {
+  .notice-line {
+    position: relative;
+    $left-color: $default-gray;
+    $right-color: #f6f5efe;
+
+    .bg-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $left-color;
+    }
+
+    .bg-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $right-color;
+    }
+
+    .inner {
+      $default-height: 62px;
+
+      height: $default-height; /* notice-line 에 높이를 주지 않고 inner 의 높이 하나만으로 컨테이너 높이를 제어하는 방법 */
+      display: flex;
+
+      .inner__left {
+        width: 60%;
+        height: 100%;
+        background-color: $left-color;
+        display: flex;
+        align-items: center;
+
+        h2 {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 700;
+          margin-right: 20px;
+        }
+
+        .swiper-container {
+          height: 100%;
+          background-color: orange;
+          flex-grow: 1;
+        }
+
+        .notice-line__more {
+          width: $default-height;
+          display: flex;
+          justify-content: center;
+
+          .material-icons {
+            color: #fff;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .inner__right {
+        width: 40%;
+        height: 100%;
+        //height: 62px;
+        background-color: $right-color;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        h2 {
+          font-size: 17px;
+          font-weight: 700;
+        }
+
+        .toggle-promotion {
+          width: $default-height;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+
+          .material-icons {
+          }
+        }
+      }
+    }
+  }
+}

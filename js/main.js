@@ -1,4 +1,8 @@
 // @ts-check
 
+/* HEADER */
 import "./components/header/index.js";
-import "./components/visual/index.js";
+
+/* MAIN PAGE */
+import "./components/main/Visual.js";
+import "./components/main/Notice.js";
