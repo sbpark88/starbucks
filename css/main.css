@@ -282,5 +282,8 @@ body .visual .inner .spoon {
   bottom: 0;
   left: 275px;
 }
+body .visual .fade-in {
+  opacity: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
