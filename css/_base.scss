@@ -1,4 +1,4 @@
-$default-gray: #333;
+@import "variables";
 
 body {
   color: $default-gray;
@@ -42,12 +42,12 @@ input {
 
   &:hover {
     background-color: $default-gray;
-    color: #fff;
+    color: $pure-white;
   }
 
   &.btn--reverse {
     background-color: $default-gray;
-    color: #fff;
+    color: $pure-white;
 
     &:hover {
       background-color: transparent;
@@ -62,7 +62,7 @@ input {
 
     &:hover {
       background-color: $brown;
-      color: #fff;
+      color: $pure-white;
     }
   }
 
@@ -73,16 +73,16 @@ input {
 
     &:hover {
       background-color: $gold;
-      color: #fff;
+      color: $pure-white;
     }
   }
 
   &.btn--white {
-    border-color: #fff;
-    color: #fff;
+    border-color: $pure-white;
+    color: $pure-white;
 
     &:hover {
-      background-color: #fff;
+      background-color: $pure-white;
       color: $default-gray;
     }
   }

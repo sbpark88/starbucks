@@ -1,9 +1,13 @@
 // @ts-check
 
 import { $, render } from "../../utils/render.js";
+import PromotionTemplate, {
+  setSwiperOnPromotion,
+} from "../common/PromotionTemplate.js";
+import { eventBind } from "../../utils/eventBinding.js";
 
 const container = $(".notice");
-const template = `
+const noticeTemplate = `
 <div class="notice-line">
   <div class="bg-left"></div>
   <div class="bg-right"></div>
@@ -48,6 +52,8 @@ const template = `
 </div>
 `;
 
+const template = noticeTemplate + PromotionTemplate;
+
 render(container)(template);
 
 new Swiper(".notice-line .swiper", {
@@ -57,3 +63,21 @@ new Swiper(".notice-line .swiper", {
   },
   loop: true,
 });
+
+setSwiperOnPromotion();
+
+const promotionToggleBtn = $(".toggle-promotion");
+
+// Toggle promotion display status
+const togglePromotion = ((promotionToggleBtn) => {
+  const promotionEl = $(".promotion");
+  let isHidePromotion = false;
+
+  return () => {
+    isHidePromotion = !isHidePromotion;
+    promotionToggleBtn.classList.toggle("revert");
+    promotionEl.classList.toggle("hide");
+  };
+})(promotionToggleBtn);
+
+eventBind({ $el: promotionToggleBtn, listener: togglePromotion });

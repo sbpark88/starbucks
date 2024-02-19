@@ -1,9 +1,8 @@
 // @ts-check
 
 import { $, render } from "../../utils/render.js";
-import Item, { mainMenuItems } from "./MainMenuItem.js";
+import MainMenuItem from "./MainMenuTemplate.js";
 
 const container = $("header .main-menu");
-const template = mainMenuItems.map(Item);
 
-render(container)(template);
+render(container)(MainMenuItem);
