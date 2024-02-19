@@ -448,4 +448,46 @@ body .notice .notice-line .inner .inner__right .toggle-promotion.revert {
   margin-right: -480px;
 }
 
+body .rewards {
+  position: relative;
+}
+body .rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .rewards .inner {
+  background-image: url("../../images/rewards.jpg");
+  height: 241px;
+}
+body .rewards .inner .btn-group {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .rewards .inner .btn-group .btn.sign-up {
+  margin-right: 10px;
+}
+body .rewards .inner .btn-group .btn.sign-in {
+  width: 110px;
+}
+body .rewards .inner .btn-group .btn.gift {
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
 /*# sourceMappingURL=main.css.map */
