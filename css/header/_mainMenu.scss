@@ -1,7 +1,6 @@
-body header .inner .main-menu {
-  $reddish-brown: #2c2a29;
-  $starbucks-green: #669900;
+@import "../variables";
 
+body header .inner .main-menu {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -35,7 +34,7 @@ body header .inner .main-menu {
             h4 {
               padding: 3px 0 12px 0;
               font-size: 14px;
-              color: #fff;
+              color: $pure-white;
             }
 
             ul li {

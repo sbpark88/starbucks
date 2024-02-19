@@ -2,11 +2,11 @@
 
 /**
  * Header MainMenu-Item Component
- * @param item
+ * @param item {array}
  * @returns {string}
  * @constructor
  */
-const Item = (item) => `
+const MainMenu = (item) => `
 <li class="item">
   <div class="item__name">${item.name}</div>
   <div class="item__contents">
@@ -20,8 +20,7 @@ const Item = (item) => `
               <ul>
                 ${content.list.reduce((acc, li) => (acc += `<li>${li}</li>`), "")}
               </ul>
-            </li>
-          `,
+            </li>`,
           )
           .join("\n")}
       </ul>
@@ -37,8 +36,6 @@ const Item = (item) => `
   </div>
 </li>
 `;
-
-export default Item;
 
 const coffeeItem = {
   name: "COFFEE",
@@ -300,4 +297,4 @@ const mainMenuItems = [
   whatsNewItem,
 ];
 
-export { mainMenuItems };
+export default mainMenuItems.map(MainMenu);
