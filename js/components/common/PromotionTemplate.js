@@ -1,5 +1,7 @@
 // @ts-check
 
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
 /**
  * Promotion Slider Component
  * @param item {array<{imgSrc: string, imgAlt: string, linkUrl: string}>}

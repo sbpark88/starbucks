@@ -5,6 +5,7 @@ import PromotionTemplate, {
   setSwiperOnPromotion,
 } from "../common/PromotionTemplate.js";
 import { eventBind } from "../../utils/eventBinding.js";
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 const container = $(".notice");
 const noticeTemplate = `
