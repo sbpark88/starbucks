@@ -490,19 +490,19 @@ body .rewards .inner .btn-group .btn.gift {
   flex-grow: 1;
 }
 
-/* 위, 아래 동일한 CSS 효과를 갖는다. */
 .youtube {
   position: relative;
   height: 700px;
   background-color: #333;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .youtube .youtube__area {
   width: 1920px;
   background-color: orange;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .youtube .youtube__area::before {
   content: "";
@@ -514,6 +514,24 @@ body .rewards .inner .btn-group .btn.gift {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   inset: 0;
+}
+.youtube .inner {
+  height: 700px;
+}
+.youtube .inner .floating {
+  position: absolute;
+}
+.youtube .inner .floating1 {
+  top: 50px;
+  left: 0;
+}
+.youtube .inner .floating2 {
+  top: 350px;
+  left: 150px;
+}
+.youtube .inner .floating3 {
+  bottom: -200px;
+  right: 0;
 }
 
 #player {
