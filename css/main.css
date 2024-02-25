@@ -561,6 +561,7 @@ body .reserve-coffee .inner .product {
   top: 0;
   right: 0;
 }
+
 body .pick-your-favorite {
   background-image: url("../../images/favorite_bg.jpg");
   background-repeat: no-repeat;
@@ -623,6 +624,47 @@ body .reserve-store .inner .medal:hover .front {
 }
 body .reserve-store .inner .medal:hover .back {
   transform: rotateY(0);
+}
+
+body .find-store {
+  background-image: url("../../images/find_store_bg.jpg");
+}
+body .find-store .inner {
+  height: 400px;
+}
+body .find-store .inner .texture1 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+body .find-store .inner .texture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .find-store .inner .picture {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+body .find-store .inner .picture1 {
+  top: -60px;
+  left: 0;
+}
+body .find-store .inner .picture2 {
+  top: 150px;
+  left: 250px;
+}
+body .find-store .inner .text-group {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+}
+body .find-store .inner .text-group .title {
+  margin-bottom: 20px;
+}
+body .find-store .inner .text-group .description {
+  margin-bottom: 20px;
 }
 
 .youtube .inner {
