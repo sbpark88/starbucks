@@ -55,6 +55,6 @@ const observerDownward = createObserver(downwardCallback);
 const observerUpward = createObserver(upwardCallback);
 
 const observeEls = $("section.observe");
-observeEls.forEach((el) => observer.observe(el));
-// observeEls.forEach((el) => observerDownward.observe(el));
+// observeEls.forEach((el) => observer.observe(el));
+observeEls.forEach((el) => observerDownward.observe(el));
 // observeEls.forEach((el) => observerUpward.observe(el));
