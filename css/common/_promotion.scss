@@ -68,21 +68,9 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    width: 42px;
-    height: 42px;
     color: $default-gray;
-    border: 2px solid $default-gray;
-    border-radius: 50%;
-    position: absolute;
+    border-color: $default-gray;
     top: 300px;
-    z-index: 1;
-    cursor: pointer;
-    outline: none;
-    transition: 0.4s;
-
-    &::after {
-      content: none;
-    }
 
     &:hover {
       color: $pure-white;
