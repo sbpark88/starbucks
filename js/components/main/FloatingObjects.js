@@ -3,8 +3,8 @@
 import { $, render } from "../../utils/render.js";
 
 render($(".youtube .inner .objects"))(`
-<img src="../../../images/floating1.png" alt="Icon" class="floating floating1">
-<img src="../../../images/floating2.png" alt="Icon" class="floating floating2">
+<img src="./images/floating1.png" alt="Icon" class="floating floating1">
+<img src="./images/floating2.png" alt="Icon" class="floating floating2">
 `);
 
 /*
@@ -12,7 +12,7 @@ render($(".youtube .inner .objects"))(`
  * 이를 해결하기 위해 'overflow: hidden' 속성이 없는 다음 섹션으로 이미지를 하나 이동함.
  * */
 render($(".season-product .inner .objects"))(`
-<img src="../../../images/floating3.png" alt="Icon" class="floating floating3">
+<img src="./images/floating3.png" alt="Icon" class="floating floating3">
 `);
 
 floatingObjectYaxis({ selector: ".floating1", delay: 1, ySize: 15 });

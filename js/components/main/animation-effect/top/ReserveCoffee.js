@@ -6,13 +6,13 @@ const container = $(".animation-effect .reserve-coffee");
 const template = `
 <div class="inner">
   <img
-    src="../../../../../images/reserve_logo.png"
+    src="./images/reserve_logo.png"
     alt=""
     class="reserve-logo back-to-position to-right"
   />
   <div class="text-group">
     <img
-      src="../../../../../images/reserve_text.png"
+      src="./images/reserve_text.png"
       alt=""
       class="description back-to-position to-right delay-300"
     />
@@ -21,7 +21,7 @@ const template = `
     </div>
   </div>
   <img
-    src="../../../../../images/reserve_image.png"
+    src="./images/reserve_image.png"
     alt=""
     class="product back-to-position to-left delay-900"
   />

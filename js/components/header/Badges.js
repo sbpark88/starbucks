@@ -9,10 +9,10 @@ const BADGE_HIDING_POSITION = 500;
 const container = $("header .badges");
 const template = `
 <div class="badge">
-  <img src="../../../images/badge1.jpg" alt="Badge" />
+  <img src="./images/badge1.jpg" alt="Badge" />
 </div>
 <div class="badge">
-  <img src="../../../images/badge2.jpg" alt="Badge" />
+  <img src="./images/badge2.jpg" alt="Badge" />
 </div>
 `;
 
