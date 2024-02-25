@@ -1,10 +1,12 @@
+@import "../variables";
+
 body .rewards {
   position: relative;
 
   .bg-left {
     width: 50%;
     height: 100%;
-    background-color: #272727;
+    background-color: $section-dark-background;
     position: absolute;
     top: 0;
     left: 0;

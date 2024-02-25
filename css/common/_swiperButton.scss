@@ -1,0 +1,21 @@
+@import "../variables";
+
+div {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+
+    &::after {
+      content: none; // .swiper-button-prev, next 기본 이미지 제거
+    }
+  }
+}

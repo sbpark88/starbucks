@@ -7,7 +7,7 @@ import PromotionTemplate, {
 import { eventBind } from "../../utils/eventBinding.js";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-const container = $(".notice");
+const container = $("body .notice");
 const noticeTemplate = `
 <div class="notice-line">
   <div class="bg-left"></div>

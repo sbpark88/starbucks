@@ -2,7 +2,7 @@
 body {
   color: #333;
   font: 400 normal 16px/1.4 "Nanum Gothic", sans-serif;
-  height: 3000px;
+  height: 6000px;
 }
 
 img {
@@ -338,21 +338,9 @@ body .visual .fade-in {
 }
 .promotion .swiper-button-prev,
 .promotion .swiper-button-next {
-  width: 42px;
-  height: 42px;
   color: #333;
-  border: 2px solid #333;
-  border-radius: 50%;
-  position: absolute;
+  border-color: #333;
   top: 300px;
-  z-index: 1;
-  cursor: pointer;
-  outline: none;
-  transition: 0.4s;
-}
-.promotion .swiper-button-prev::after,
-.promotion .swiper-button-next::after {
-  content: none;
 }
 .promotion .swiper-button-prev:hover,
 .promotion .swiper-button-next:hover {
@@ -515,30 +503,251 @@ body .rewards .inner .btn-group .btn.gift {
   position: absolute;
   inset: 0;
 }
-.youtube .inner {
-  height: 700px;
-}
-.youtube .inner .floating {
-  position: absolute;
-}
-.youtube .inner .floating1 {
-  top: 50px;
-  left: 0;
-}
-.youtube .inner .floating2 {
-  top: 350px;
-  left: 150px;
-}
-.youtube .inner .floating3 {
-  bottom: -200px;
-  right: 0;
-}
 
 #player {
   width: 100%;
   height: 100%;
   position: absolute;
   inset: 0;
+}
+
+body .season-product {
+  background-image: url("../../images/season_product_bg.jpg");
+}
+body .season-product .inner {
+  height: 400px;
+}
+body .season-product .inner .text-group {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+body .season-product .inner .text-group .title {
+  margin-bottom: 10px;
+}
+body .season-product .inner .text-group .description {
+  margin-bottom: 15px;
+}
+body .reserve-coffee {
+  background-image: url("../../images/reserve_bg.jpg");
+}
+body .reserve-coffee .inner {
+  height: 400px;
+}
+body .reserve-coffee .inner .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+body .reserve-coffee .inner .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+body .reserve-coffee .inner .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .pick-your-favorite {
+  background-image: url("../../images/favorite_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body .pick-your-favorite .inner {
+  padding: 110px 0;
+}
+body .pick-your-favorite .inner .text-group {
+  margin-left: 100px;
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 40px;
+}
+body .reserve-store {
+  background-image: url("../../images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body .reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .reserve-store .inner .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+body .reserve-store .inner .medal .front,
+body .reserve-store .inner .medal .back {
+  width: 334px;
+  height: 334px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+body .reserve-store .inner .medal .front {
+  transform: rotateY(0);
+}
+body .reserve-store .inner .medal .back {
+  transform: rotateY(-180deg);
+}
+body .reserve-store .inner .medal .back .btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: 0 auto;
+}
+body .reserve-store .inner .medal:hover .front {
+  transform: rotateY(180deg);
+}
+body .reserve-store .inner .medal:hover .back {
+  transform: rotateY(0);
+}
+
+body .find-store {
+  background-image: url("../../images/find_store_bg.jpg");
+}
+body .find-store .inner {
+  height: 400px;
+}
+body .find-store .inner .texture1 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+body .find-store .inner .texture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .find-store .inner .picture {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+body .find-store .inner .picture1 {
+  top: -60px;
+  left: 0;
+}
+body .find-store .inner .picture2 {
+  top: 150px;
+  left: 250px;
+}
+body .find-store .inner .text-group {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+}
+body .find-store .inner .text-group .title {
+  margin-bottom: 20px;
+}
+body .find-store .inner .text-group .description {
+  margin-bottom: 20px;
+}
+
+.youtube .inner {
+  height: 700px;
+}
+
+.objects .floating {
+  position: absolute;
+}
+.objects .floating1 {
+  top: 50px;
+  left: 0;
+}
+.objects .floating2 {
+  top: 350px;
+  left: 150px;
+}
+.objects .floating3 {
+  top: -200px;
+  right: 0;
+}
+
+body .awards {
+  background-color: #272727;
+}
+body .awards .inner {
+  padding: 40px 0;
+}
+body .awards .inner .swiper {
+  width: 100%;
+  height: 40px;
+}
+body .awards .inner .swiper-button-prev,
+body .awards .inner .swiper-button-next {
+  opacity: 0.3;
+  color: #fff;
+  border-color: #fff;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+body .awards .inner .swiper-button-prev:hover,
+body .awards .inner .swiper-button-next:hover {
+  color: #333;
+  background-color: #fff;
+}
+body .awards .inner .swiper-button-prev {
+  left: -100px;
+}
+body .awards .inner .swiper-button-next {
+  right: -100px;
+}
+
+div .swiper-button-prev,
+div .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+}
+div .swiper-button-prev::after,
+div .swiper-button-next::after {
+  content: none;
+}
+
+/* Observer target show animation on main page */
+.back-to-position {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-300 {
+  transition-delay: 0.3s;
+}
+.show .back-to-position.delay-600 {
+  transition-delay: 0.6s;
+}
+.show .back-to-position.delay-900 {
+  transition-delay: 0.9s;
 }
 
 /*# sourceMappingURL=main.css.map */
