@@ -14,6 +14,7 @@ import "./components/main/animation-effect/middle/PickYourFavorite.js";
 import "./components/main/animation-effect/middle/ReserveStore.js";
 import "./components/main/animation-effect/bottom/FindStore.js";
 import "./components/main/FloatingObjects.js";
+import "./components/main/Awards.js";
 import { $ } from "./utils/render.js";
 
 // 양방향
