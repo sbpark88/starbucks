@@ -579,6 +579,52 @@ body .pick-your-favorite .inner .text-group {
   justify-content: flex-end;
   gap: 40px;
 }
+body .reserve-store {
+  background-image: url("../../images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body .reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .reserve-store .inner .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+body .reserve-store .inner .medal .front,
+body .reserve-store .inner .medal .back {
+  width: 334px;
+  height: 334px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+body .reserve-store .inner .medal .front {
+  transform: rotateY(0);
+}
+body .reserve-store .inner .medal .back {
+  transform: rotateY(-180deg);
+}
+body .reserve-store .inner .medal .back .btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: 0 auto;
+}
+body .reserve-store .inner .medal:hover .front {
+  transform: rotateY(180deg);
+}
+body .reserve-store .inner .medal:hover .back {
+  transform: rotateY(0);
+}
+
 .youtube .inner {
   height: 700px;
 }

@@ -11,4 +11,5 @@ import "./components/common/Youtube.js";
 import "./components/main/animation-effect/SeasonProduct.js";
 import "./components/main/animation-effect/ReserveCoffee.js";
 import "./components/main/animation-effect/PickYourFavorite.js";
+import "./components/main/animation-effect/ReserveStore.js";
 import "./components/main/FloatingObjects.js";
