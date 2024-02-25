@@ -687,4 +687,30 @@ body .find-store .inner .text-group .description {
   right: 0;
 }
 
+/* Observer target show animation on main page */
+.back-to-position {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-300 {
+  transition-delay: 0.3s;
+}
+.show .back-to-position.delay-600 {
+  transition-delay: 0.6s;
+}
+.show .back-to-position.delay-900 {
+  transition-delay: 0.9s;
+}
+
 /*# sourceMappingURL=main.css.map */

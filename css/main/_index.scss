@@ -6,3 +6,35 @@
 @import "animationEffectMiddle";
 @import "animationEffectBottom";
 @import "floatingObjects";
+
+/* Observer target show animation on main page */
+.back-to-position {
+  opacity: 0;
+  transition: 1s ease-in-out;
+
+  &.to-right {
+    transform: translateX(-150px);
+  }
+
+  &.to-left {
+    transform: translateX(150px);
+  }
+}
+
+// .back-to-position 보다 아래 와야 정상적으로 translate 가 작동한다.
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+
+  &.delay-300 {
+    transition-delay: 0.3s;
+  }
+
+  &.delay-600 {
+    transition-delay: 0.6s;
+  }
+
+  &.delay-900 {
+    transition-delay: 0.9s;
+  }
+}
