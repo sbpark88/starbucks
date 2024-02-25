@@ -26,29 +26,6 @@
     position: absolute;
     inset: 0;
   }
-
-  .inner {
-    height: 700px;
-
-    .floating {
-      position: absolute;
-    }
-
-    .floating1 {
-      top: 50px;
-      left: 0;
-    }
-
-    .floating2 {
-      top: 350px;
-      left: 150px;
-    }
-
-    .floating3 {
-      bottom: -200px;
-      right: 0;
-    }
-  }
 }
 
 #player {

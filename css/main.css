@@ -2,7 +2,7 @@
 body {
   color: #333;
   font: 400 normal 16px/1.4 "Nanum Gothic", sans-serif;
-  height: 3000px;
+  height: 6000px;
 }
 
 img {
@@ -515,30 +515,88 @@ body .rewards .inner .btn-group .btn.gift {
   position: absolute;
   inset: 0;
 }
-.youtube .inner {
-  height: 700px;
-}
-.youtube .inner .floating {
-  position: absolute;
-}
-.youtube .inner .floating1 {
-  top: 50px;
-  left: 0;
-}
-.youtube .inner .floating2 {
-  top: 350px;
-  left: 150px;
-}
-.youtube .inner .floating3 {
-  bottom: -200px;
-  right: 0;
-}
 
 #player {
   width: 100%;
   height: 100%;
   position: absolute;
   inset: 0;
+}
+
+body .season-product {
+  background-image: url("../../images/season_product_bg.jpg");
+}
+body .season-product .inner {
+  height: 400px;
+}
+body .season-product .inner .text-group {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+body .season-product .inner .text-group .title {
+  margin-bottom: 10px;
+}
+body .season-product .inner .text-group .description {
+  margin-bottom: 15px;
+}
+body .reserve-coffee {
+  background-image: url("../../images/reserve_bg.jpg");
+}
+body .reserve-coffee .inner {
+  height: 400px;
+}
+body .reserve-coffee .inner .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+body .reserve-coffee .inner .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+body .reserve-coffee .inner .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .pick-your-favorite {
+  background-image: url("../../images/favorite_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body .pick-your-favorite .inner {
+  padding: 110px 0;
+}
+body .pick-your-favorite .inner .text-group {
+  margin-left: 100px;
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.youtube .inner {
+  height: 700px;
+}
+
+.objects .floating {
+  position: absolute;
+}
+.objects .floating1 {
+  top: 50px;
+  left: 0;
+}
+.objects .floating2 {
+  top: 350px;
+  left: 150px;
+}
+.objects .floating3 {
+  top: -200px;
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

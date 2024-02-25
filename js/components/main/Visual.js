@@ -2,7 +2,7 @@
 
 import { $, render } from "../../utils/render.js";
 
-const container = $(".visual");
+const container = $("body .visual");
 const template = `
 <div class="inner">
   <div class="title fade-in">

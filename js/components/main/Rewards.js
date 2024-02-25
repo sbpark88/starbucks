@@ -1,6 +1,8 @@
+// @ts-check
+
 import { $, render } from "../../utils/render.js";
 
-const container = $(".rewards");
+const container = $("body .rewards");
 const template = `
 <div class="bg-left"></div>
 <div class="bg-right"></div>
