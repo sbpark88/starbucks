@@ -4,15 +4,31 @@
   "description": "<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 --> <a name=\"readme-top\"></a> <!-- *** Thanks for checking out the Best-README-Template. If you have a suggestion *** that would make this better, please fork the repo and create a pull request *** or simply open an issue with the tag \"enhancement\". *** Don't forget to give the project a star! *** Thanks again! Now go create something AMAZING! :D -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.10.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
     "prettier": "^3.2.5",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "reset-css": "^5.0.2",
+    "swiper": "^11.0.6"
   }
 }

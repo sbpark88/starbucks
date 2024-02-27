@@ -94,7 +94,7 @@
 
 ### Built With
 
-해당 프로젝트에 사용된 기술입니다(단, 별도의 github action 설정을 생략하기 위해 scss 를 css 트랜스파일 시켜 함께 커밋함).
+해당 프로젝트에 사용된 기술입니다.
 
 ![HTML5][HTML5 Icon]
 ![SCSS][SCSS Icon]
