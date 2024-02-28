@@ -8,6 +8,8 @@ import "swiper/scss/pagination";
 
 import "../css/main.scss";
 
+import { observerDownward } from "./utils/observer.js";
+
 /* HEADER */
 import "./components/header/index.js";
 
@@ -25,44 +27,10 @@ import "./components/main/FloatingObjects.js";
 import "./components/main/Awards.js";
 import { $ } from "./utils/render.js";
 
-// 양방향
-const createObserver = (callback, options = { threshold: 0.2 }) =>
-  new IntersectionObserver(callback, {
-    threshold: 0.2,
-  });
+/* FOOTER */
+import "./components/footer/index.js";
 
-const twoWayCallback = (entries) =>
-  entries.forEach((entry) =>
-    entry.isIntersecting
-      ? entry.target.classList.add("show")
-      : entry.target.classList.remove("show"),
-  );
-
-const downwardCallback = (entries) =>
-  entries.forEach((entry) => {
-    const topIsIntersecting = entry.boundingClientRect.top >= 0;
-    if (topIsIntersecting) {
-      entry.isIntersecting
-        ? entry.target.classList.add("show")
-        : entry.target.classList.remove("show");
-    }
-  });
-
-const upwardCallback = (entries) =>
-  entries.forEach((entry) => {
-    const topIsHiding = entry.boundingClientRect.top < 0;
-    if (topIsHiding) {
-      entry.isIntersecting
-        ? entry.target.classList.add("show")
-        : entry.target.classList.remove("show");
-    }
-  });
-
-const observer = createObserver(twoWayCallback);
-const observerDownward = createObserver(downwardCallback);
-const observerUpward = createObserver(upwardCallback);
+/* SCROLL OBSERVER */
 
 const observeEls = $("section.observe");
-// observeEls.forEach((el) => observer.observe(el));
 observeEls.forEach((el) => observerDownward.observe(el));
-// observeEls.forEach((el) => observerUpward.observe(el));

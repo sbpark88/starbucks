@@ -1,0 +1,78 @@
+@import "../variables";
+
+body footer {
+  background-color: $section-dark-background;
+  border: 1px solid $default-gray;
+
+  .inner {
+    padding: 40px 0 60px 0;
+
+    .menu {
+      display: flex;
+      justify-content: center;
+
+      li {
+        position: relative;
+
+        &:not(:first-child)::before {
+          content: "";
+          width: 3px;
+          height: 3px;
+          background-color: #555;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+        }
+
+        a {
+          color: #ccc;
+          font-size: 12px;
+          font-weight: 700;
+          padding: 15px;
+          display: block;
+
+          &.green {
+            color: $starbucks-green;
+          }
+        }
+      }
+    }
+
+    .btn-group {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      .btn {
+        font-size: 12px;
+      }
+    }
+
+    .info {
+      margin: 30px;
+      text-align: center;
+
+      span {
+        margin-right: 20px;
+        color: $information-text;
+        font-size: 12px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .copyright {
+      color: $information-text;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .logo {
+      margin: 30px auto 0;
+    }
+  }
+}
