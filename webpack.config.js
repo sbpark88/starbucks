@@ -11,7 +11,6 @@ export default {
   output: {
     filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: process.env.NODE_ENV === "development" ? "/" : "/starbucks",
     assetModuleFilename: "images/[hash][ext][query]",
   },
   module: {
