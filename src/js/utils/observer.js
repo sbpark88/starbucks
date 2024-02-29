@@ -1,4 +1,4 @@
-export const createObserver = (callback, options = { threshold: 0.2 }) =>
+const createObserver = (callback, options = { threshold: 0.2 }) =>
   new IntersectionObserver(callback, {
     threshold: 0.2,
   });
