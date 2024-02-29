@@ -11,6 +11,7 @@ export default {
   output: {
     filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: process.env.NODE_ENV === "development" ? "/" : "/starbucks",
     assetModuleFilename: "images/[hash][ext][query]",
   },
   module: {
@@ -45,11 +46,11 @@ export default {
     new HtmlWebpackPlugin({
       template: "./src/pages/main/index.html",
       filename: "index.html",
-      chunks: ["index"], // entry 의 JavaScript 이름과 동일하게 지정
+      chunks: ["index"], // entry 의 JavaScript 이름과 동일하게 지정. 해당 JavaScript 를 불러온다.
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/sign-in/index.html",
-      filename: "sign-in/index.html",
+      filename: "sign-in/index.html", // directory 가 routing 기능을 하도록 "라우팅 경로/index.html" 로 설정한다.
       chunks: ["signIn"],
     }),
   ],
