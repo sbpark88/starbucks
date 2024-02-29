@@ -1,9 +1,11 @@
 // @ts-check
 
+import "../../../css/common/toTop.scss";
+
 import { $ } from "../../utils/render.js";
 import { eventBind } from "../../utils/eventBinding.js";
 import { throttle } from "../../utils/performance.js";
-import K from "../../../constant.js";
+import K from "../../constant.js";
 
 const template = `
 <div id="to-top">

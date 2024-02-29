@@ -4,9 +4,12 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 const __dirname = path.resolve();
 
 export default {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/pages/main/index.js",
+    signIn: "./src/pages/sign-in/index.js",
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[hash][ext][query]",
   },
@@ -40,8 +43,14 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html", // 루트 디렉토리에 있는 index.html을 템플릿으로 사용
-      filename: "index.html", // 생성될 HTML 파일 이름
+      template: "./src/pages/main/index.html",
+      filename: "index.html",
+      chunks: ["index"], // entry 의 JavaScript 이름과 동일하게 지정
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/sign-in/index.html",
+      filename: "sign-in/index.html",
+      chunks: ["signIn"],
     }),
   ],
 };

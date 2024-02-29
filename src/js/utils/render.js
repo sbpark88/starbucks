@@ -34,4 +34,18 @@ const render =
   (html = "") =>
     (el.innerHTML = normalizeHTML(html));
 
-export { $, render };
+/**
+ * Render page with components
+ * @param template
+ * @returns {Function}
+ */
+const init =
+  (template, el = "#view") =>
+  (components) => {
+    const container = $(el);
+    render(container)(template);
+
+    components();
+  };
+
+export { $, render, init };

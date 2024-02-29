@@ -1,11 +1,20 @@
 // @ts-check
 
-import { $, render } from "../../utils/render.js";
+import "../../../css/footer/index.scss";
+
+import { $, render, init } from "../../utils/render.js";
 import template from "./index.html";
 
 const container = $("footer");
 
-render(container)(template);
+init(
+  template,
+  "footer",
+)(() => {
+  setThisYear();
+});
 
-const thisYear = $(".this-year");
-thisYear.textContent = new Date().getFullYear() + "";
+function setThisYear() {
+  const thisYear = $(".this-year");
+  thisYear.textContent = new Date().getFullYear() + "";
+}

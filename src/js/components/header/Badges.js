@@ -5,7 +5,7 @@ import { eventBind } from "../../utils/eventBinding.js";
 import { throttle } from "../../utils/performance.js";
 import { gsap } from "gsap";
 import template from "./Badges.html";
-import K from "../../../constant.js";
+import K from "../../constant.js";
 
 const container = $("header .badges");
 

@@ -7,7 +7,7 @@ const container = $("header .sub-menu");
 const template = `
 <ul class="menu">
   <li>
-    <a href="/signin">Sign In</a>
+    <a href="/sign-in" id="sign-in">Sign In</a>
   </li>
   <li>
     <a href="javascript:void(0)">My Starbucks</a>

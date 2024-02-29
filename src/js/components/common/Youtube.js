@@ -1,5 +1,7 @@
 // @ts-check
 
+import "../../../css/common/youtube.scss";
+
 import { $, render } from "../../utils/render.js";
 import { attachYoutubeIframe } from "../../utils/YoutubeIframeModule.js";
 
