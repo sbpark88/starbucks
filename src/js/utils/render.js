@@ -40,7 +40,7 @@ const render =
  * @returns {Function}
  */
 const init =
-  (template, el = "#view") =>
+  (template, el = "#app") =>
   (components) => {
     const container = $(el);
     render(container)(template);

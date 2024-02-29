@@ -1,4 +1,4 @@
 // @ts-check
 
 import "../common.js";
-import "../../js/views/Main.js";
+import "../../js/apps/Main.js";

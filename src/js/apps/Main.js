@@ -9,11 +9,13 @@ import "../../css/common/swiperButton.scss";
 
 import "../../css/main/index.scss";
 
-import { $, render, init } from "../utils/render.js";
+import { $, init } from "../utils/render.js";
 import template from "./Main.html";
 import { observerDownward } from "../utils/observer.js";
 
 init(template)(() => {
+  import("../components/common/Badges.js");
+
   import("../components/main/Visual.js");
   import("../components/main/Notice.js");
   import("../components/main/Rewards.js");

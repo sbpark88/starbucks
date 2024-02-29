@@ -1,4 +1,4 @@
 // @ts-check
 
 import "../common.js";
-import "../../js/views/SignIn.js";
+import "../../js/apps/SignIn.js";

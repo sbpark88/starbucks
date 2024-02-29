@@ -2,7 +2,7 @@
 
 import "../../../css/header/index.scss";
 
-import { $, render, init } from "../../utils/render.js";
+import { init } from "../../utils/render.js";
 import template from "./index.html";
 init(
   template,
@@ -10,5 +10,4 @@ init(
 )(() => {
   import("./SubMenu.js");
   import("./MainMenu.js");
-  import("./Badges.js");
 });
