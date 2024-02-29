@@ -22,7 +22,7 @@
   }
   .youtube__cover {
     background-image: url("/assets/images/video_cover_pattern.png");
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $shadow-color;
     position: absolute;
     inset: 0;
   }

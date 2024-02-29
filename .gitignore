@@ -97,6 +97,8 @@ fabric.properties
 *.css.map
 *.sass.map
 *.scss.map
+src/css/**/*.css
+
 
 ### SonarQube template
 # SonarQube ignore files.
