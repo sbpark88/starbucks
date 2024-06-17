@@ -37,7 +37,7 @@
     -->
     <br />
     <br />
-    <a href="https://starbucks-sbpark88.netlify.app">View Demo</a>
+    <a href="https://my-star-cafe.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/sbpark88/starbucks/projects">Project</a>
     ·
@@ -236,7 +236,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]:images/screenshot.png
-[product-deploy-url]:https://starbucks-sbpark88.netlify.app
+[product-deploy-url]:https://my-star-cafe.netlify.app
 
 [JavaScript Icon]:https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white
 [Vue.js Icon]:https://img.shields.io/badge/Vue.js-4FC08D.svg?&style=for-the-badge&logo=Vue.js&logoColor=white
